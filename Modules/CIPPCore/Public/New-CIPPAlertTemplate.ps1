@@ -280,7 +280,7 @@ function New-CIPPAlertTemplate {
     }
 
     if ($Format -eq 'html') {
-        return  [pscustomobject]@{
+        return [pscustomobject]@{
             title       = $Title
             htmlcontent = $HTMLTemplate -f $Title, $IntroText, $ButtonUrl, $ButtonText, $AfterButtonText, $AuditLogLink
         }
